@@ -24,7 +24,19 @@
         <item name="colorPrimary">@color/colorPrimaryBlack</item>
         <item name="colorButtonNormal">@color/colorPrimaryDarkBlack</item>
         <item name="android:textColor">@color/colorTextBlack</item>
-        <item name="colorAccent">@color/colorAccentBlack</item>
+        <item name="colorAccent">@android:color/widget_edittext_dark</item>
+    </style>
+
+    <style name="MarginS" parent="AppTheme">
+        <item name="android:layout_margin">1dp</item>
+    </style>
+
+    <style name="MarginM" parent="AppTheme">
+        <item name="android:layout_margin">3dp</item>
+    </style>
+
+    <style name="MarginL" parent="AppTheme">
+        <item name="android:layout_margin">10dp</item>
     </style>
 
 </resources>

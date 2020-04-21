@@ -6,4 +6,7 @@
     <string name="green">green</string>
     <string name="blue">blue</string>
     <string name="black">black</string>
+    <string name="small">small</string>
+    <string name="middle">middle</string>
+    <string name="large">large</string>
 </resources>

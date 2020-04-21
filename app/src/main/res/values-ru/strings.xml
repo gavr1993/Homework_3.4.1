@@ -6,4 +6,7 @@
     <string name="green">зелёный</string>
     <string name="blue">синий</string>
     <string name="black">чёрный</string>
+    <string name="small">маленькие</string>
+    <string name="middle">средние</string>
+    <string name="large">большие</string>
 </resources>
