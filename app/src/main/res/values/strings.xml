@@ -3,4 +3,7 @@
     <string name="text">Приложение работает.</string>
     <string name="ru">русский</string>
     <string name="en">английский</string>
+    <string name="green">зелёный</string>
+    <string name="blue">синий</string>
+    <string name="black">чёрный</string>
 </resources>
