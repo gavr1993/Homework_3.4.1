@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
     private Button btnOk;
     private Spinner langSpin;
     private Spinner colSpin;
-    private Spinner margSpin;
     private TextView statusTxt;
 
     @Override
@@ -30,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
         Utils.onActivityCreateSetTheme(this);
         setContentView(R.layout.activity_main);
         btnOk = findViewById(R.id.btnOk);
-        margins = new String[]{getString(R.string.small), getString(R.string.middle), getString(R.string.large)};
         languages = new String[]{getString(R.string.ru), getString(R.string.en)};
         colors = new String[]{getString(R.string.green), getString(R.string.blue), getString(R.string.black)};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, languages);
@@ -88,35 +86,6 @@ public class MainActivity extends AppCompatActivity {
                                 Utils.changeToTheme(MainActivity.this, Utils.THEME_BLUE);
                             case 2:
                                 Utils.changeToTheme(MainActivity.this, Utils.THEME_BLACK);
-                        }
-                    }
-                });
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-            }
-        });
-
-        ArrayAdapter<String> adapter3 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, margins);
-        adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        Spinner margSpin = findViewById(R.id.margSpin);
-        margSpin.setAdapter(adapter3);
-        margSpin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view,
-                                       final int position, long id) {
-                btnOk.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        switch (position) {
-                            case 0:
-                                Utils.changeToTheme(MainActivity.this, Utils.SMALL);
-                                break;
-                            case 1:
-                                Utils.changeToTheme(MainActivity.this, Utils.MIDDLE);
-                            case 2:
-                                Utils.changeToTheme(MainActivity.this, Utils.LARGE);
                         }
                     }
                 });
